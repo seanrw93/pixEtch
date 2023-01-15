@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>pixEtch</title>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body id="body">
+  <div class="title-container-fadein-fadeout">
+    <h1 class="title-text">pixEtch</h1>
+  </div>
+  <div class="btn-container main-container">
+    <h1 class="heading">pixEtch</h1>
+    <h3 class="author">Created by Seanrw93</h3>
+    <a href="https://github.com/seanrw93/pixEtch">
+      <i class="fa fa-github fa-2x"></i>
+    </a>
+      <div class="input color-btn">
+        <label for="color">Choose a color: </label>
+        <input type="color" id="color-btn" name="color" class="button">
+      </div>
+      <button class="input button" id="random-btn">Random Color</button>
+      <div class="input slider">
+        <p class="slider-caption">Grid size: <p>
+        <input class="range button" type="range" id="volume" name="volume" value="16" placeholder="16" min="16" max="64" oninput="changeGridSize(this.value)">
+        <p class="slider-value">16 x 16</p>
+      </div>
+      <button class="input" id="clear-btn">Clear all</button>
+    </div>
+    <div class="grid-container main-container">
+    </div>
+</body>
+</html>
